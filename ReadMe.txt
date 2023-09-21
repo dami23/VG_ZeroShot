@@ -9,6 +9,11 @@ pytorch = 1.13.1
 2. run "python data/prepare_refer.py" to generate csv files for RefCOCO, RefCOCO+, and RefCOCOg.
 3. run "python data.ocid_csv_generate.py" to obtain csv files for OCID-Ref.
 
+###Pre-trained CLIP Models
+cd third_party
+cd modified_CLIP
+pip install -e .
+
 ###Training and Evaluation
 1.training: python codes/model_train.py 'dataset_experiment'
 dataset: the name of benchmark datasets, such as Flickr30K, Flickr30K-Split-0, Flickr30K-Split-1, RefCOCO, RefCOCO+, RefCOCOg, OCID-Ref
@@ -18,3 +23,9 @@ experiment: a specific name to save a model for the current model, such as 'fina
 'refcoco_final': saved model name
 
 ###Trained Models
+The trained models on each dataset can be download from: [here](https://drive.google.com/drive/folders/183BmPhVlt8NYfZdWq5LGYB5XAG6ohI0S?usp=share_link).
+
+### Acknowledgement
+We thank
+1. the repository on retina-net (https://github.com/yhenon/pytorch-retinanet).
+2. the repository on CLIP and pre-trained models (https://github.com/openai/CLIP).
