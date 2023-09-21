@@ -10,8 +10,8 @@ PyTorch = 1.13.1
 3. run "python data.ocid_csv_generate.py" to obtain csv files for OCID-Ref.
 
 ### Pre-trained CLIP Models
-cd third_party
-cd modified_CLIP
+cd third_party \\
+cd modified_CLIP \\
 pip install -e .
 
 ### Training and Evaluation
