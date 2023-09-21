@@ -15,8 +15,8 @@ cd modified_CLIP \
 pip install -e .
 
 ### Training and Evaluation
-1. training: python codes/model_train.py 'dataset_experiment'
-dataset: the name of benchmark datasets, such as Flickr30K, Flickr30K-Split-0, Flickr30K-Split-1, RefCOCO, RefCOCO+, RefCOCOg, OCID-Ref
+1. training: python codes/model_train.py 'dataset_experiment' \
+dataset: the name of benchmark datasets, such as Flickr30K, Flickr30K-Split-0, Flickr30K-Split-1, RefCOCO, RefCOCO+, RefCOCOg, OCID-Ref. \
 experiment: a specific name to save a model for the current model, such as 'final' for the whole framework.
 
 2.evaluation: python codes/model_train.py 'refcoco_final' --resume=True --only_test=True
